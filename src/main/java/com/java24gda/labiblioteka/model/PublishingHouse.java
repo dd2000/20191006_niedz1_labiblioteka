@@ -22,3 +22,4 @@ public class PublishingHouse {
     @OneToMany(mappedBy = "publishingHouse")
     private Set<Book> bookSet;
 }
+
