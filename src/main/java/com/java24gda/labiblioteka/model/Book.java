@@ -15,18 +15,18 @@ import java.util.Set;
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
 
     private String title;
-    private int yearWriten;
+    private int yearWritten;
 
-    @Formula(value = "year(now()) - year_written")
+    @Formula(value = "(year(now()) - year_written)")
     private Integer howOld;
 
+    private int numberOfPages;
+    // ile łącznie jest takich książek w bibliotece
     private int numberOfCopies;
 
-    @OneToMany
+    @ManyToOne()
     private PublishingHouse publishingHouse;
-
 }

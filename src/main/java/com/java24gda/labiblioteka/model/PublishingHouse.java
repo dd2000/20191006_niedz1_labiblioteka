@@ -19,6 +19,6 @@ public class PublishingHouse {
 
     private String name;
 
-    @OneToMany
+    @OneToMany(mappedBy = "publishingHouse")
     private Set<Book> bookSet;
 }
