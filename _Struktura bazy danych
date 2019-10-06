@@ -1,0 +1,31 @@
+Paweł Recław 9:21 AM
+Każdy model ma id.
+PublishingHouse: (wydawnictwo)
+- name
+- set<Book>
+Book:
+- title,
+- year written,
+- how old(formula),
+- number of pages,
+- number of available copies
+- number of borrowed copies(formula)
+- authors,
+- current lents (set <BookLent>) (obecnie wypożyczenia)
+Author:
+- name,
+- surname,
+- date of birth,
+- number of books (formula)
+- books,
+BookLent:
+- client,
+- book,
+- date lent,
+- date returned,
+Client:
+- name,
+- surname,
+- id number,
+- set of lent books,
+
